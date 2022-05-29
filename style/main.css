@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/*обращение ко всем тегам, снимаем стандартные параметры тегам(у каждого тега свои параметры)*/
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    убираем линии обводки у некоторых браузеров*/
+}
+nav,footer,header,aside{
+    display: block;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*уравнивает поведеине шрифтов и элементов для разных браузеров, запрещает самовольное увелечение шрифта на айфонах*/
+input,button,textarea{
+    font-family: inherit;
+}
+input::-ms-clear{
+    display: none;}
+button{
+    cursor: pointer;
+}
+button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+a, a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: 400;
+}
+.list1{
+    margin: 50px;
+}
+.list1 li{
+    margin: 15px;
+}
+.list1 li:nth-child(1){
+     text-decoration: line-through;
+     color: #273d46;
+ }
+.list1 li:nth-child(2){
+    font-weight: 700;
+    color: #273d46;
+}
+.list1 li:nth-child(3){
+    font-style: italic;
+    color: #273d46;
+}
+.list1 li:nth-child(4){
+    text-transform: uppercase;
+    color: #273d46;
+}
+.list1 li:nth-child(1):hover{
+    color: yellow;
+    font-size: 30px;
+}
+.list1 li:nth-child(2):hover{
+    color: red;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+.list1 li:nth-child(3):hover{
+    font-style: oblique;
+    color: #883;
+    font-size: 30px;
+}
+.list1 li:nth-child(4):hover{
+    color: #283;
+    font-size: 30px;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    width: 150px;
+    height: 25px;
+    border: solid 2px blue;
+    border-radius: 10px;
+    margin: 50px;
+}
+button:hover{
+    background-color: green;
+    border: dashed 2px green;
+}
+button:active{
+    background-color: grey;
+    border: dashed 2px grey;
+}
+input{
+    padding: 0 0 0 10px;
+    color: black;
+    margin: 50px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #eee;
+}
+input:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    border: solid 1px #000;
+}
